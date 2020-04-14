@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 6.01: Responsive Navigation</title>
+  <style>
+  @media (orientation: landscape) {
+    header {
+        display: flex;
+        align-items: center;
+        }
+
+	  nav {
+        margin-left: 20px;
+       }
+
+	  article {
+        columns: 100px 2;
+      }
+  }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+    }
+ 
+    nav ul {
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: 1px solid black;
+    }
+    nav li a {
+      color: black;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      text-decoration: underline;
+    }
+    nav li:last-child {
+      border-right: 0;
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    article, footer, nav {
+      padding: 10px;
+    }
+    article h1, article p {
+      margin-bottom: 10px;
+    }
+    footer {
+      background: black;
+      text-align: center;
+      color: white;
+    }
+
+    /*@media (min-width: 480px) {
+    	nav ul {
+    		display: flex;
+    	}
+    	nav li {
+    		flex: 1 1 auto;
+    	}
+    }*/
+ 
+    /*nav a {
+      color: white;
+      background: black;
+      font-weight: bold;
+      display: block;
+      padding: 15px;
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+    }*/
+
+    /*@media only screen and (min-width: 768px) {
+	    nav a {
+	        font-size: 20px;
+	    }
+	   }
+ 
+    nav a:hover {
+      background: darkgray;
+    }*/
+  </style>
+</head>
+ 
+<body>
+  <header>
+    <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="/green_eagle_icon">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#delivery_request">Our Routes & Charges</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#itemtrack">Track Your Items</a></li>
+        <li id="partner"><a href="signUpForm.html" target="_blank">Become a Delivery Partner</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+  <article>
+    <h1>We Are <span>Green-Eagle</span> Couriers</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, 
+        ut tristique sapien tristique et
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, 
+        ut tristique sapien tristique et
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, 
+        ut tristique sapien tristique et
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, 
+        ut tristique sapien tristique et
+      </p>
+      <div class="details">
+				<img src="/chapter_1/parcel.jpg" alt="" />
+				<h3>Courier Service</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Tempore placeat eos veniam ex vitae incidunt voluptate cupiditate non possimus, 
+					sapiente maiores ab alias deleniti minima neque sint assumenda aut doloremque.
+				</p>
+			</div>
+			<div class="details">
+				<img src="/chapter_1/timelydelivery.png" alt="" />
+				<h3>Service Delivery</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Tempore placeat eos veniam ex vitae incidunt voluptate cupiditate non possimus, 
+					sapiente maiores ab alias deleniti minima neque sint assumenda aut doloremque.
+				</p>
+			</div>
+			<div class="details">
+				<img src="/chapter_1/affordable.png" alt="" />
+				<h3>Affordable</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Tempore placeat eos veniam ex vitae incidunt voluptate cupiditate non possimus, 
+					sapiente maiores ab alias deleniti minima neque sint assumenda aut doloremque.
+				</p>
+			</div>
+			<div id="itemtrack">
+				<button type="submit">Track Your Item</button>
+				<input type="text" placeholder="Enter Tracking Number" />       
+			</div>
+
+		</section>
+  </article>
+  <footer>
+    <p>Website by Author Name</p>
+  </footer>
+</body>
+</html>
